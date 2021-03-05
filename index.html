@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Play with words</h1>
+    </div>
+    <div class="find">
+
+      <div class="textarea">
+        <h1>Your text</h1>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="inputSubmit">
+
+        <button class="submit">submit</button>
+        <button class="copy">copy</button>
+        <button class="clear">clear</button>
+      </div>
+
+      <h2>Find</h2>
+      <div class="custom-select-wrapper">
+        <div class="custom-select">
+          <div class="custom-select__trigger"><span>_select_</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="custom-options">
+
+            <span class="custom-option selected" data-value="selected">_select_</span>
+            <span class="custom-option " data-value="longestWord">Longest word</span>
+            <span class="custom-option" data-value="shortestWord">Shortest word</span>
+            <span class="custom-option" data-value="highestNoWord">Highest occuring word</span>
+
+            <span class="custom-option" data-value="leastNoWord">Least occurring word</span>
+            <span class="custom-option" data-value="highestNoLetter">Most occurring letter</span>
+            <span class="custom-option" data-value="leastNoLetter">Least Occurring letter</span>
+            <span class="custom-option" data-value="highestNoVowel">Most occuring vowel</span>
+            <span class="custom-option" data-value="leastNoVowel">Least occuring vowel</span>
+            <span class="custom-option" data-value="highestNoConsonant">Most occuring Consonant</span>
+            <span class="custom-option" data-value="leastNoConsonant">Least occuring Consonant</span>
+            <span class="custom-option" data-value="highestNoDigit">Most occuring Digits</span>
+            <span class="custom-option" data-value="leastNoDigit">Least occuring Digits</span>
+            <span class="custom-option" data-value="wordCount">Number of words</span>
+            <span class="custom-option" data-value="letterCount">Number of letters</span>
+            <span class="custom-option" data-value="paragraphCount">Number of paragraph</span>
+            <span class="custom-option" data-value="readTime">Reading time</span>
+
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="findFinalResult"></div>
+      </div>
+    </div>
+    <div class="findWord">
+      <h2>Search</h2>
+      <div class="form-group">
+        <label for="findWordInput">Find all occurrence of a word or letter</label>
+        <input id="findWordInput" type="text" />
+      </div>
+
+      <div class="form-group">
+        <label for="replaceWordInput">Replace all occurrence of a word or letter</label>
+        <input id="replaceWordInput" type="text" />
+      </div>
+      <h5>Any change in the text can be retrieved with the copy button above, which will copy it to your clipboard, with
+        your changes effected</h5>
+      <div class="inputContainer">
+
+        <div class="button">
+          <button class="prev">prev</button>
+          <button class="next">next</button>
+          <div style="margin-top:10px;font-size: 22px;">
+            <span class="numberSearchCount">0</span> / <span class="countForSearch">0</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="searchContainer">
+
+
+        <div class="inputForSearch"></div>
+      </div>
+
+      <div class="inputContainer">
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <a href="https://twitter.com/fakoredeDami" target="_blank"><img src="./images/twitter-line.svg" alt=""></a>
+    <a href="https://github.com/fakoredeDamilola" target="_blank"><img src="./images/github.svg" alt=""></a>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
